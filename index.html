@@ -3,50 +3,47 @@
   <head>
     <meta charset="utf-8" name="HTML-Basics">
     <title></title>
-    <link rel="reset" href="reset.css">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
-  	<header>
-   		<h1 class="mainHead">This is my header</h1>
-   		<div class="link">
-   			<a href="https://www.lipsum.com/feed/html">Home</a>
-   			<a href="https://www.lipsum.com/feed/html">Name</a>
-   			<a href="https://www.lipsum.com/feed/html">News</a>
-   		</div>
-   	</header>
-   	<section class="box">
-	   	<h2 class= "subHead">About me</h2>
-	   	<div class="regText">
-		   	<p>Morbi et libero malesuada, malesuada felis non, auctor massa. Donec quis nisl in diam lobortis pretium. Etiam lacinia et mauris a maximus. Quisque elementum neque a nunc sagittis accumsan non eu justo. Nam lacinia ornare tellus et malesuada. Aenean vulputate lacus vel nulla accumsan luctus. Pellentesque tristique, turpis ut porttitor efficitur, mi arcu dictum leo, et rutrum mi lectus vitae libero. Donec eu quam vel dui blandit luctus ut eu nisi. Ut in dolor eget leo mattis eleifend. Etiam vestibulum leo sit amet est laoreet volutpat. Proin imperdiet, mauris quis fermentum egestas, dolor nisi commodo nisi, quis dapibus ipsum tellus consequat metus. Aliquam fringilla ut arcu ac fringilla. Suspendisse orci tellus, fringilla id maximus quis, gravida sit amet dui.</p>
-		    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et ipsum quis magna porta finibus. Donec mattis auctor euismod. Cras dictum convallis blandit. Cras eleifend dapibus metus interdum consequat. Duis finibus nunc ac nisi vehicula, sed ullamcorper lacus ornare. Aenean faucibus suscipit rhoncus. Aliquam eleifend faucibus urna, ut malesuada augue sodales vitae. Vestibulum commodo nisi vel felis gravida condimentum. Etiam id quam sit amet nisl vulputate eleifend. Donec porta, quam ac egestas gravida, tellus ex volutpat augue, ut pulvinar metus metus vel nulla. Cras eget metus a turpis placerat auctor.</p>
-		</div>
-	</section>
+  		<header>
+	  		<section class="headerSection">
+	   			<a href="google.com" class="headerLink1">Home</a>
+	   			<a href="google.com" class="headerLink2">About</a>
+	   			<a href="google.com" class="headerLink3">Contact</a>
+	   			<i class="fas fa-chess-pawn" id="headerIcon"></i>
+	   		</section>
+   		</header>
+   		<section class="titleSection">
+   			<h1 class="titleHeader">Chess.org.net.edu</h1>
+   			<p class= "titleText">Chess is a two-player strategy board game played on a chessboard, a checkered gameboard with 64 squares arranged in an 8×8 grid. The game is played by millions of people worldwide. Each player begins with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. Each of the six piece types moves differently, with the most powerful being the queen and the least powerful the pawn.</p>
+   			<button class="titleButton">Enter Site</button>
+   		</section>
 
-	<section class="gallery">
-		<img class ="galleryImg" src="download.png" alt="Gonzaga">
-		<img class ="galleryImg" src="download.png" alt="Gonzaga">
-		<img class ="galleryImg" src="download.png" alt="Gonzaga">
-		<img class ="galleryImg" src="download.png" alt="Gonzaga">
-		<img class ="galleryImg" src="download.png" alt="Gonzaga">
-		<img class ="galleryImg" src="download.png" alt="Gonzaga">
-		<img class ="galleryImg" src="download.png" alt="Gonzaga">
-		<img class ="galleryImg" src="download.png" alt="Gonzaga">
-		<img class ="galleryImg" src="download.png" alt="Gonzaga">
-		<img class ="galleryImg" src="download.png" alt="Gonzaga">
-	</section>
-	<section class="buttonSection">
-		<div class="buttonContainer">
-  	    	<button class="nextPageButton" onclick="window.location.href='fullScreen.html'">Button</button>
-  	    </div>
-  	</section>
-	
-	<footer class="footer">
-		<img class= "firstImg" src="majin.png" alt="Majin">
-  	    <img class="secondImg" src="majin.png" alt="Majin">
-	</footer>
-	
+   		<section class="boxSection">
+   			<section class="pieceBox" id="bishopIcon">
+   				<i class="fas fa-chess-bishop"></i>
+   				<p class="boxText">The bishop is this hatty boi who moves diagonaly.  He always stays on the same color squares.  Overall a pretty dece dude.</p>
+   				<button class="boxButton">View More</button>
+   			</section>
 
-    
+   			<section class="pieceBox" id="knightIcon">
+   				<i class="fas fa-chess-knight"></i>
+   				<p class="boxText">The knight is this horsey boi who moves L-shaped.  He can jump over other bois.  Overall a pretty spicy piece.</p>
+   				<button class="boxButton">View More</button>
+   			</section>
+
+   			<section class="pieceBox" id="rookIcon">
+   				<i class="fas fa-chess-rook"></i>
+   				<p class="boxText">The rook is this bricky boi who moves straight.  He is often trapped behind a slow moving pawn.  Overall a pretty big boi.</p>
+   				<button class="boxButton">View More</button>
+   			</section>
+   			
+   		</section>
+
+   	</body>
 
 </html>
