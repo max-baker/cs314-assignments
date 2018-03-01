@@ -5,45 +5,61 @@
     <title></title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
   <body>
   		<header>
 	  		<section class="headerSection">
-	   			<a href="google.com" class="headerLink1">Home</a>
-	   			<a href="google.com" class="headerLink2">About</a>
-	   			<a href="google.com" class="headerLink3">Contact</a>
-	   			<i class="fas fa-chess-pawn" id="headerIcon"></i>
+	   			<h1 class="mainTitle">Survey!</h1>
+	   			<p class="subTitle">Give us Your Data</p>
 	   		</section>
    		</header>
-   		<section class="titleSection">
-   			<h1 class="titleHeader">Chess.org.net.edu</h1>
-   			<p class= "titleText">Chess is a two-player strategy board game played on a chessboard, a checkered gameboard with 64 squares arranged in an 8×8 grid. The game is played by millions of people worldwide. Each player begins with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. Each of the six piece types moves differently, with the most powerful being the queen and the least powerful the pawn.</p>
-   			<button class="titleButton">Enter Site</button>
+   		<section class="formBody">
+   			<label class="fNameLable">
+   				First Name
+   				<br>
+   				<input name="fName" class="fNameInput" type="text" placeholder="Enter your First Name">
+   			</label>
+   			<label class="lNameLable">
+   				Last Name
+   				<br>
+   				<input name="lName" class="lNameInput" type="text" placeholder="Enter your Last Name">
+   			</label>
+   			<label class="phoneLable">
+   				Your Phone Number
+   				<br>
+   				<input name="phoneNumber" class="phoneInput" type="Number" placeholder="Enter your Phone Number">
+   			</label>
+
+   			<label class="favGame1">
+   				Magic <input type="radio" name= "game" value="mtg">
+   			</label>
+   			<label class="favGame2">
+   				DnD <input type="radio" name= "game" value="dnd">
+   			</label>
+   			<label class="favGame3">
+   				Fortnite <input type="radio" name= "game" value="fortnite">
+   			</label>
+
+   			<label class="gameExplan">
+   				Tell me about your favorite game:
+   				<br>
+   				<textarea class="textBox" placeholder="Why is that your favorite game?"></textarea>
+   			</label>
+
+   			<label class="surveyQualityArea">
+   				This Survey Has Been:
+   				<br>
+	   			<select name="survey" class="surveyQualityDropdown">
+	   				<option>Great</option>
+	   				<option>Amazing</option>
+	   				<option>Over 9000</option>
+	   			</select>
+   			</label>
+
+   			<input type="submit" name="submit" class="submitButton">
+
    		</section>
-
-   		<section class="boxSection">
-   			<section class="pieceBox" id="bishopIcon">
-   				<i class="fas fa-chess-bishop"></i>
-   				<p class="boxText">The bishop is this hatty boi who moves diagonaly.  He always stays on the same color squares.  Overall a pretty dece dude.</p>
-   				<button class="boxButton">View More</button>
-   			</section>
-
-   			<section class="pieceBox" id="knightIcon">
-   				<i class="fas fa-chess-knight"></i>
-   				<p class="boxText">The knight is this horsey boi who moves L-shaped.  He can jump over other bois.  Overall a pretty spicy piece.</p>
-   				<button class="boxButton">View More</button>
-   			</section>
-
-   			<section class="pieceBox" id="rookIcon">
-   				<i class="fas fa-chess-rook"></i>
-   				<p class="boxText">The rook is this bricky boi who moves straight.  He is often trapped behind a slow moving pawn.  Overall a pretty big boi.</p>
-   				<button class="boxButton">View More</button>
-   			</section>
-   			
-   		</section>
-
-   	</body>
+	</body>
 
 </html>

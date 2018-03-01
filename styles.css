@@ -9,161 +9,181 @@
 }
 
 .headerSection{
-	background-color: black;
-	height: 5em;
-	position: relative;
-}
-
-.headerLink1{
-	color: white;
-	position: absolute;
-	top: 50%;
-	transform: translate(0,-50%);
-	left:2em;
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
-}
-
-.headerLink2{
-	color: white;
-	position: absolute;
-	top: 50%;
-	transform: translate(0,-50%);
-	left:6em;
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
-}
-
-.headerLink3{
-	color: white;
-	position: absolute;
-	top: 50%;
-	transform: translate(0,-50%);
-	left:10em;
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
-}
-
-#headerIcon{
-	color: white;
-	position: absolute;
-	top: 50%;
-	transform: translate(0,-50%);
-	right: 4em;
-	font-size: 2.5em;
-}
-
-.titleSection{
-	background-color: rgb(215,219,221);
-	height: 30em;
+	height: 7em;
+	background-color: olive;
 	position: relative;
 	text-align: center;
 }
 
-.titleHeader{
-	color: black;
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
-	font-size: 3em;
+.mainTitle{
 	position: absolute;
-	transform: translate(-50%,0);
+	font-size: 3.5em;
+	top:10%;
 	left: 50%;
-	top:1em;
-
-}
-.titleText{
-	color: white;
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
-	font-size: 18px;
-	position: absolute;
 	transform: translate(-50%,0);
-	left: 50%;
-	top: 7em;
-}
-.titleButton{
-	position: absolute;
-	transform: translate(-50%,0);
-	left: 50%;
-	top:80%;
-	border: 3px solid black;
-	font-size: 20px;
-	padding: 10px 20px;
-	color:black;
-	border-radius: 8px;
-	background-color: rgb(225,229,231);
 	font-family: 'barlow_condensedblack', Arial, sans-serif;
 }
 
-.titleButton:hover{
-	background-color: rgb(145,149,151);	
+.subTitle{
+	position: absolute;
+	font-size: 1.5em;
+	top:60%;
+	left: 50%;
+	transform: translate(-50%,0);
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
 }
 
-.boxSection{
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	justify-content: space-around;
-}
-
-.pieceBox{
-	width: 30%;
-	text-align: center;
+.formBody{
 	position: relative;
-}
-
-#bishopIcon{
-	font-size: 5em;
-	top:0.5em;
-}
-
-#rookIcon{
-	font-size: 5em;
-	top:0.5em;
-}
-
-#knightIcon{
-	font-size: 5em;
-	top:0.5em;
-}
-
-.boxText{
-	font-size: 20px;
-	padding-top: 3em;
-	padding-left: 30%;
-	padding-right: 30%;
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
-}
-
-.boxButton{
-	border: 3px solid black;
-	font-size: 20px;
-	padding: 10px 20px;
-	color:black;
-	border-radius: 8px;
-	background-color: rgb(225,229,231);
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
-}
-
-.boxButton:hover{
-	background-color: rgb(145,149,151);	
-}
-
-@media screen and (max-width: 768px) {
- 	.boxSection{
- 		flex-direction:column;
- 	}
-
- 	.pieceBox{
-	width: 90%;
-	}
-
-	#headerIcon{
-	right: 1em;
-	}
-
-	.titleSection{
 	height: 40em;
-	}
+}
+.fNameLable{
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 50%;
+	top: 10%;
+}
+.fNameInput{
+	width: 100%;
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	border: 2px solid red;
+	color: olive;
 }
 
-@media screen and (max-width: 450px) {
- 	.headerSection{
-		background-color: green;
+.lNameLable{
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 50%;
+	top:20%;
+}
+.lNameInput{
+	width: 100%;
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	border: 2px solid red;
+	color: olive;
+}
+.phoneLable{
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 50%;
+	top:30%;
+}
+.phoneInput{
+	width: 100%;
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	border: 2px solid red;
+	color: olive;
+}
+.favGame1{
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	position: absolute;
+	top:40%;
+	left:25%;
+}
+
+.favGame2{
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	position: absolute;
+	top:40%;
+	left:50%;
+	transform: translate(-50%,0);
+}
+
+.favGame3{
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	position: absolute;
+	top:40%;
+	left:75%;
+	transform: translate(-100%,0);
+}
+
+.gameExplan{
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 50%;
+	top:50%;
+}
+
+.textBox{
+	width: 100%;
+	height: 8em;
+	border: 2px solid red;
+	resize: none;
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	color: olive;
+}
+
+.surveyQualityArea{
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 50%;
+	top:80%;
+}
+
+.surveyQualityDropdown{
+	width: 100%;
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	border: 2px solid red;
+}
+
+.submitButton{
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%,0);
+	width: 20%;
+	height: 5%;
+	top:90%;
+	border: 2px solid red;
+	background-color: white;
+}
+
+.submitButton:hover{
+	background: olive;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: olive;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: olive;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: olive;
+}
+
+@media screen and (max-width: 767px) {
+	.headerSection{
+		background: red;
+	}
+	.fNameLable{
+		width: 80%;
+	}
+	.lNameLable{
+		width: 80%;
+	}
+	.phoneLable{
+		width: 80%;
+	}
+	.gameExplan{
+		width: 80%;
+	}
+	.surveyQualityArea{
+		width: 80%;
+	}
+	.submitButton{
+		width: 80%;
 	}
 }
