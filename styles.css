@@ -8,37 +8,35 @@
 
 }
 
-.headerSection{
-	background-color: black;
+header{
+	background-color: rgb(28, 0, 173);
 	height: 5em;
 	position: relative;
 }
 
-.headerLink1{
+.headerLink{
 	color: white;
 	position: absolute;
 	top: 50%;
 	transform: translate(0,-50%);
+	
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+
+.headerLink:hover{
+	color: black;
+}
+
+#headerLink1{
 	left:2em;
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
 }
-
-.headerLink2{
-	color: white;
-	position: absolute;
-	top: 50%;
-	transform: translate(0,-50%);
+#headerLink2{
 	left:6em;
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
 }
-
-.headerLink3{
-	color: white;
-	position: absolute;
-	top: 50%;
-	transform: translate(0,-50%);
+#headerLink3{
 	left:10em;
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
 }
 
 #headerIcon{
@@ -50,120 +48,39 @@
 	font-size: 2.5em;
 }
 
-.titleSection{
-	background-color: rgb(215,219,221);
-	height: 30em;
-	position: relative;
-	text-align: center;
+footer{
+	bottom:0em;
+	background: lightgrey;
+	line-height: 1.5em;
 }
 
-.titleHeader{
+.footerLink{
 	color: black;
 	font-family: 'barlow_condensedblack', Arial, sans-serif;
-	font-size: 3em;
-	position: absolute;
-	transform: translate(-50%,0);
-	left: 50%;
-	top:1em;
-
+	text-decoration: none;
+	transition: all 0.5s ease;
+	padding: 1em;
+	font-weight: 900;
 }
-.titleText{
-	color: white;
+
+.footerText{
+	color: black;
 	font-family: 'barlow_condensedblack', Arial, sans-serif;
-	font-size: 18px;
-	position: absolute;
-	transform: translate(-50%,0);
-	left: 50%;
-	top: 7em;
+	padding-left: 1em;
 }
-.titleButton{
-	position: absolute;
-	transform: translate(-50%,0);
-	left: 50%;
-	top:80%;
-	border: 3px solid black;
-	font-size: 20px;
-	padding: 10px 20px;
-	color:black;
-	border-radius: 8px;
-	background-color: rgb(225,229,231);
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
+#emailAddress{
+	color: rgb(28, 0, 173);
+	font-style: italic;
+}
+.footerLink:hover{
+	color: rgb(28, 0, 173);
 }
 
-.titleButton:hover{
-	background-color: rgb(145,149,151);	
-}
-
-.boxSection{
-	display: flex;
-	flex-wrap: wrap;
-	width: 100%;
-	justify-content: space-around;
-}
-
-.pieceBox{
-	width: 30%;
-	text-align: center;
-	position: relative;
-}
-
-#bishopIcon{
-	font-size: 5em;
-	top:0.5em;
-}
-
-#rookIcon{
-	font-size: 5em;
-	top:0.5em;
-}
-
-#knightIcon{
-	font-size: 5em;
-	top:0.5em;
-}
-
-.boxText{
-	font-size: 20px;
-	padding-top: 3em;
-	padding-left: 30%;
-	padding-right: 30%;
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
-}
-
-.boxButton{
-	border: 3px solid black;
-	font-size: 20px;
-	padding: 10px 20px;
-	color:black;
-	border-radius: 8px;
-	background-color: rgb(225,229,231);
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
-}
-
-.boxButton:hover{
-	background-color: rgb(145,149,151);	
-}
 
 @media screen and (max-width: 768px) {
- 	.boxSection{
- 		flex-direction:column;
- 	}
-
- 	.pieceBox{
-	width: 90%;
-	}
 
 	#headerIcon{
-	right: 1em;
+		right: 1em;
 	}
 
-	.titleSection{
-	height: 40em;
-	}
-}
-
-@media screen and (max-width: 450px) {
- 	.headerSection{
-		background-color: green;
-	}
 }
