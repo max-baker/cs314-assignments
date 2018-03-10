@@ -30,13 +30,13 @@ header{
 }
 
 #headerLink1{
-	left:2em;
+	right:13em;
 }
 #headerLink2{
-	left:6em;
+	right:7em;
 }
 #headerLink3{
-	left:11em;
+	right:2em;
 }
 
 #headerIcon{
@@ -44,7 +44,7 @@ header{
 	position: absolute;
 	top: 50%;
 	transform: translate(0,-50%);
-	right: 4em;
+	left: 4em;
 	font-size: 2.5em;
 }
 
@@ -58,7 +58,7 @@ footer{
 	color: black;
 	font-family: 'barlow_condensedblack', Arial, sans-serif;
 	text-decoration: none;
-	transition: all 0.5s ease;
+	transition: all 1s ease;
 	padding: 1em;
 	font-weight: 900;
 }
@@ -137,6 +137,36 @@ footer{
 	width: 80%;
 	font-weight: 400;
 }
+
+.pageTitle{
+	height:5em;
+	position: relative;
+}
+
+#projectsTitle{
+	position: absolute;
+	top:20%;
+	left:50%;
+	transform: translateX(-50%);
+	z-index: 1000;
+	font-size: 3.5em;
+	font-weight: 600;
+}
+
+.sectionTitleHead{
+	position: relative;
+	height: 4em;
+}
+
+.sectionTitle{
+	position: absolute;
+	font-size: 2em;
+	font-weight: 400;
+	left:50%;
+	top: 30%;
+	transform: translateX(-50%);
+}
+
 #lociSection{
 	position: relative;
 }
@@ -171,11 +201,163 @@ footer{
 	font-size: 1.2em;
 }
 
+#mainTitle{
+	height: 8em;
+	position: relative;
+}
+
+#mainTitleText{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 3em;
+	font-weight: 500;
+	top: 0.5em;
+}
+
+#portraitSection{
+	height: 25em;
+}
+
+#portrait{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 20em;
+}
+
+#educationSection{
+	position: relative;
+	height:20em;
+}
+
+#bulldogImg{
+	height:15em;
+	position: absolute;
+	left: 5%;
+}
+
+#bulldogText{
+	position: absolute;
+	width: 40%;
+	left: 55%;
+	font-size: 1.2em;
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+}
+
+#languageSection{
+	position: relative;
+	height: 30em;
+}
+
+#langaugeTitle{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 2.5em;
+	font-weight: 300;
+	top: 0.5em;
+}
+
+#flexLanguageContainer{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: absolute;
+	top: 6em;
+}
+
+.languageBox{
+	width: 5em;
+	height: 2.5em;
+	background-color: rgb(28, 0, 173);
+	text-align: center;
+	padding-top: 2.0em;
+	color: white;
+	font-size: 2em;
+	border: 2px solid white;
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	transition: all 1s ease;
+}
+
+.languageBox:hover{
+	color: black;
+	font-size: 3em;
+}
+
 
 @media screen and (max-width: 768px) {
 
 	#headerIcon{
-		right: 1em;
+		left: 1em;
+	}
+	#lociSection{
+		height: 30em;
+	}
+	#lociLogo{
+		width: 45%;
+		position: absolute;
+		left:50%;
+		top: 0%;
+		transform: translateX(-50%);
+	}
+	#lociText{
+		left:50%;
+		top: 50%;
+		width: 60%;
+		transform: translateX(-50%);
+	}
+
+	#conkySection{
+		height:69em;
+	}
+	#conkyLogo{
+		width: 45%;
+		position: absolute;
+		left:50%;
+		top: 0%;
+		transform: translateX(-50%);
+	}
+	#conkyText{
+		left:50%;
+		top: 80%;
+		width: 60%;
+		transform: translateX(-50%);
+	}
+	#languageSection{
+	position: relative;
+	height: 85em;
+	}
+
+	#flexLanguageContainer{
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.languageBox{
+		width: 80%
+	}
+
+	#educationSection{
+		position: relative;
+		height:30em;
+	}
+
+	#bulldogImg{
+		position: absolute;
+		left: 50%;
+		top:0%;
+		transform: translateX(-50%);
+	}
+
+	#bulldogText{
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 60%;
 	}
 
 }
