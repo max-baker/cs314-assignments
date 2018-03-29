@@ -85,7 +85,6 @@ footer{
 
 #contactTitle{
 	top:5%;
-	z-index: 1000;
 	font-size: 2.5em;
 	font-weight: 300;
 }
@@ -143,6 +142,18 @@ footer{
 
 	#headerIcon{
 		right: 1em;
+	}
+	.contactForm{
+		height: 24em;
+	}
+	.textBox{
+		width:100%;
+	}
+	#contactTitle{
+	font-size: 2em;
+	}
+	#submitButton{
+		font-size: 0.8em;
 	}
 
 }
