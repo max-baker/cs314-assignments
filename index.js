@@ -49,13 +49,90 @@ function UpperOrLower(){
 	}
 }
 //Task 6
+function IntegerSwap(){
+	let numbersString = window.prompt();
+	let numbers = numbersString.split(',');
+	if(numbers.length == 0){
+		console.log("please enter two numbers separated by commas");
+	}
+	let temp = numbers[0];
+	numbers[0] = numbers[numbers.length-1];
+	numbers[numbers.length-1] = temp;
+	alert(numbers);
+}
 //Task 7
+function LongestString(){
+	let string = window.prompt();
+	let words = string.split(',');
+	if(words.length == 0){
+		console.log("please enter at least one word separated by commas");
+	}
+	let maxLength = words[0].length;
+	console.log(words);
+	let longest = words[0];
+	for(let word in words){
+		if(words[word].length>maxLength){
+			maxLength = words[word].length;
+			longest=words[word];
+		}
+	}
+	alert(longest);
+}
 //Task 8
+function LargestEven(){
+	let numbersString = window.prompt();
+	let numbers = numbersString.split(',');
+	let evens = [];
+	for(let key in numbers){
+		if(numbers[key]%2==0){
+			evens.push(numbers[key]);
+		}
+	}
+	let largest=0;
+	for(let key in evens){
+		if(evens[key]>largest){
+			largest=evens[key];
+		}
+	}
+	alert(largest);
+}
 //Task 9
+function CurrentDayTime(){
+	let now = new Date();
+	let days=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+	let hours = now.getHours();
+	let ampm='';
+	if(hours>12){
+		hours=hours-12;
+		ampm='AM';
+	}else{
+		ampm='PM';
+	}
+	if(hours<10){
+		hours = '0'+hours;
+	}
+	let minutes = now.getMinutes();
+	if(minutes<10){
+		minutes = '0'+minutes;
+	}
+	alert('Today is '+days[now.getDay()]+'\nIt is '+ hours+':'+minutes+ampm);
+}
 //Task 10
+function UnlimitedFunction(...args){
+	let str='';
+	for(let arg in args){
+		str = str+args[arg];
+	}
+	alert(str);
+}
 //Function Calls
 //console.log(CharSwap(window.prompt()));
 //console.log(HiString(window.prompt()));
 //console.log(ThreeCharsToFront(window.prompt()));
 //console.log(StringsToSentence());
 //console.log(UpperOrLower());
+//console.log(IntegerSwap());
+//LongestString();
+//LargestEven();
+//CurrentDayTime();
+//UnlimitedFunction('a','b','c');
