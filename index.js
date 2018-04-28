@@ -1,75 +1,69 @@
-function ScrollToOne(){
-	window.scrollTo(0,200)
-}
-function ScrollToTwo(){
-	window.scrollTo(0,400)
-}
-function ScrollToThree(){
-	window.scrollTo(0,600)
-}
+$.ajax({
+	url: "https://jsonplaceholder.typicode.com/users",
+	type:"GET",
+	dataType: "json"
+}).done(function(response){
+	makeUsers(response);
+}).fail(function(){
+	console.log("sounds good doesnt work");
+})
 
-function ScrollToFour(){
-	window.scrollTo(0,900)
-}
-
-function ScrollToFive(){
-	window.scrollTo(0,1200)
-}
-
-function BackToBlue(){
-	let background = document.getElementById('one');
-	background.style.backgroundColor='blue';
-}
-
-function BackToGreen(){
-	let background = document.getElementById('one');
-	background.style.backgroundColor='green';
-}
-
-function TogglePinkOrange(event){
-	let background = document.getElementById('two');
-	if(background.style.backgroundColor!='pink'){
-		background.style.backgroundColor='pink';
-		event.target.innerText='Click for Orange';
-	}
-	else
-	{
-		background.style.backgroundColor='orange';
-		event.target.innerText='Click for Pink';
+function makeUsers(response){
+	for (user of response){
+		let userContainer = document.createElement('p');
+		let userName = document.createElement('p');
+		let todoButton = document.createElement('button');
+		todoButton.innerHTML = "TODO's";
+		todoButton.id = user.id;
+		todoButton.addEventListener('click',fetchTodos);
+		let albumButton = document.createElement('button');
+		albumButton.innerHTML = "Albums";
+		albumButton.id = user.id;
+		albumButton.addEventListener('click',fetchAlbums);
+		userName.innerHTML = user.name;
+		userContainer.appendChild(userName);
+		userContainer.appendChild(todoButton);
+		userContainer.appendChild(albumButton);
+		document.body.appendChild(userContainer);
 	}
 }
 
-function AddToList(){
-	let textToAdd = document.getElementById('textToList').value;
-	let listEntry = document.createElement('li');
-	listEntry.innerText= textToAdd;
-	document.getElementById('addList').appendChild(listEntry);
+function fetchTodos(event){
+	$.ajax({
+	url: "https://jsonplaceholder.typicode.com/todos",
+	type:"GET",
+	dataType: "json"
+	}).done(function(response){
+		displayTodos(response,event);
+	}).fail(function(){
+		console.log("sounds good doesnt work");
+	})
 }
 
-function RemoveListEntry(event){
-	let list = document.getElementById('removeList');
-	list.removeChild(event.target);
-}
-
-function HighlightListEntry(event){
-	let list = document.getElementById('selectList');
-	let listItems = list.getElementsByTagName('li');
-	event.target.style.backgroundColor='yellow';
-	for(key in listItems){
-		if(listItems[key]!=event.target)
-			listItems[key].style.backgroundColor='lightgray';
+function displayTodos(response,event){
+	console.log(event.target.id)
+	for (todo of response){
+		if(event.target.id == todo.userId)
+		console.log(todo.title)
 	}
 }
 
-let buttons = document.getElementsByTagName('button');
-buttons[0].addEventListener('click', ScrollToOne);
-buttons[1].addEventListener('click', ScrollToTwo);
-buttons[2].addEventListener('click', ScrollToThree);
-buttons[3].addEventListener('click', ScrollToFour);
-buttons[4].addEventListener('click', ScrollToFive);
-buttons[5].addEventListener('click', BackToBlue);
-buttons[6].addEventListener('click', BackToGreen);
-buttons[7].addEventListener('click', TogglePinkOrange);
-buttons[8].addEventListener('click', AddToList);
-document.getElementById('removeList').addEventListener('click', RemoveListEntry);
-document.getElementById('selectList').addEventListener('click', HighlightListEntry);
+function fetchAlbums(event){
+	$.ajax({
+	url: "https://jsonplaceholder.typicode.com/albums",
+	type:"GET",
+	dataType: "json"
+	}).done(function(response){
+		displayAlbums(response,event);
+	}).fail(function(){
+		console.log("sounds good doesnt work");
+	})
+}
+
+function displayAlbums(response,event){
+	console.log(event.target.id)
+	for (album of response){
+		if(event.target.id == album.userId)
+		console.log(album.title)
+	}
+}
