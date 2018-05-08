@@ -184,7 +184,37 @@ footer{
 #mapDescriptionContainer{
 	height:13em;
 }
+#randomImage{
+	height:20em;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,0);
+	top:10em;
+}
 
+#reloadDog{
+	width: 30%;
+	height: 3em;
+	border: 2px solid black;
+	background-color: white;
+	font-size: 1.2em;
+	font-weight: 200;
+	color:  black);
+	transition: all 1s ease;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%,0);
+	top:26em;
+}
+
+#reloadDog:hover{
+	background-color: lightgrey;
+	border: 1px solid black;
+}
+
+#dogContent{
+	height: 31em;
+}
 @media screen and (max-width: 768px) {
 
 	#headerIcon{
