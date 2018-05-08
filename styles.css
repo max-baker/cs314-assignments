@@ -8,8 +8,12 @@
 
 }
 
+
+html{
+	font-family:  Arial, sans-serif;
+}
 header{
-	background-color: rgb(28, 0, 173);
+	background-color: black;
 	height: 5em;
 	position: relative;
 }
@@ -19,7 +23,6 @@ header{
 	position: absolute;
 	top: 50%;
 	transform: translate(0,-50%);
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
 	text-decoration: none;
 	transition: all 0.5s ease;
 }
@@ -44,10 +47,10 @@ header{
 #headerIcon{
 	color: white;
 	position: absolute;
-	top: 50%;
+	top: 15%;
 	transform: translate(0,-50%);
-	left: 4em;
-	font-size: 2.5em;
+	left: 2em;
+	font-size: 3.5em;
 }
 
 footer{
@@ -58,7 +61,6 @@ footer{
 
 .footerLink{
 	color: black;
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
 	text-decoration: none;
 	transition: all 1s ease;
 	padding: 1em;
@@ -67,17 +69,104 @@ footer{
 
 .footerText{
 	color: black;
-	font-family: 'barlow_condensedblack', Arial, sans-serif;
 	padding-left: 1em;
+}
+
+.pageTitle{
+	left:50%;
+	transform: translate(-50%,0);
+	position: absolute;
+	font-size: 2em;
+	font-weight: 900;
+}
+#formSection{
+	height: 25em;
+}
+
+.inputLabel{
+	position: absolute;
+	left:50%;
+	transform: translate(-50%,0);
+	width: 60%;
+}
+
+.textBox{
+	width: 100%;
+	border: 2px solid black;
+}
+
+#submitButton{
+	width: 30%;
+	height: 3em;
+	border: 2px solid black;
+	background-color: white;
+	font-size: 1.2em;
+	font-weight: 200;
+	color:  black);
+	transition: all 1s ease;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%,0);
+	top:20em;
+}
+
+#submitButton:hover{
+	background-color: lightgrey;
+	border: 1px solid black;
+}
+
+#nameInput{
+	top:9em;
+}
+
+#emailInput{
+	top:12em;
+}
+
+#commentInput{
+	top:15em;
+}
+
+#bigBox{
+	height:6em;
+}
+
+.inputInvalid{
+	border: 3px solid red;
+}
+
+#commentSection{
+	height: 2em;
+}
+
+.comment{
+	left:50%;
+	transform: translate(-50%,0);
+	background-color: lightgrey;
+	position: absolute;
+}
+
+.userName{
+	font-size: 1.5em;
+	font-weight: 600;
 }
 
 @media screen and (max-width: 768px) {
 
 	#headerIcon{
-		left: 1em;
+		left: 0em;
 	}
-	#lociSection{
-		height: 30em;
+	#headerLink1{
+		right:14em;
+	}
+	#headerLink2{
+		right:10em;
+	}
+	#headerLink3{
+		right:6em;
+	}
+	#headerLink4{
+		right:2em;
 	}
 
 }
