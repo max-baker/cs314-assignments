@@ -215,6 +215,111 @@ footer{
 #dogContent{
 	height: 31em;
 }
+
+#contentContainer{
+	height:55em;
+}
+
+#subTitle{
+	left:50%;
+	transform: translate(-50%,0);
+	position: absolute;
+	top:8em;
+	font-size: 1.2em;
+
+}
+
+#contentList{
+	left:50%;
+	transform: translate(-50%,0);
+	position: absolute;
+	top:12em;
+	list-style-type: square;
+}
+
+#movingShip{
+	position: absolute;
+	top:18em;
+}
+
+#doYouNeed{
+	left:50%;
+	transform: translate(-50%,0);
+	position: absolute;
+	top:25em;
+}
+
+#tryThisLink{
+	left:50%;
+	transform: translate(-50%,0);
+	position: absolute;
+	top:27em;
+}
+
+#googleLink{
+	left:50%;
+	transform: translate(-50%,0);
+	position: absolute;
+	top:15em;
+	font-size: 2em;
+	transition: all 1s ease;
+	text-decoration: none;
+}
+
+#googleLink:hover{
+	font-weight: 900;
+	color:red;
+}
+
+#flexContainer{
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	position: absolute;
+	top: 37em;
+}
+
+.topicBox{
+	width: 5em;
+	height: 2.5em;
+	background-color: black;
+	text-align: center;
+	padding-top: 2.0em;
+	color: white;
+	font-size: 2em;
+	border: 2px solid white;
+	font-family: 'barlow_condensedblack', Arial, sans-serif;
+	transition: all 1s ease;
+}
+
+#longBox{
+	padding-top: 1.0em;
+	height: 3.7em;
+}
+
+.topicBox:hover{
+	background-color: grey;
+	font-size: 3em;
+}
+
+#contentReminder{
+	left:50%;
+	transform: translate(-50%,0);
+	position: absolute;
+	top:34em;
+
+}
+
+@media screen and (max-width: 1000px) {
+	#contentContainer{
+	height:75em;}
+	.topicBox{
+	width: 7em;}
+
+}
+
 @media screen and (max-width: 768px) {
 
 	#headerIcon{
@@ -232,5 +337,7 @@ footer{
 	#headerLink4{
 		right:2em;
 	}
+	#contentContainer{
+	height:110em;}
 
 }
