@@ -151,6 +151,40 @@ footer{
 	font-weight: 600;
 }
 
+#map{
+	height:20em;
+	position: absolute;
+}
+
+#mapSection{
+	height: 40em;
+	top:3em;
+}
+
+#mapTitle{
+	height:4em;
+}
+#mapContainer{
+	height: 45em
+}
+
+.mapDescription{
+	position: absolute;
+	font-size: 1.5em;
+}
+
+#collegeDescription{
+	bottom: 3em;
+}
+
+#employerDescription{
+	bottom: 0em;
+}
+
+#mapDescriptionContainer{
+	height:13em;
+}
+
 @media screen and (max-width: 768px) {
 
 	#headerIcon{
