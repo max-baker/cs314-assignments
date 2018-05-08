@@ -174,11 +174,11 @@ footer{
 }
 
 #collegeDescription{
-	bottom: 3em;
+	top: 36em;
 }
 
 #employerDescription{
-	bottom: 0em;
+	top: 39em;
 }
 
 #mapDescriptionContainer{
@@ -338,6 +338,18 @@ footer{
 		right:2em;
 	}
 	#contentContainer{
-	height:110em;}
+		height:110em;}
+
+	#collegeDescription{
+		top: 37em;
+	}
+
+	#employerDescription{
+		top: 42em;
+	}
+
+	#mapDescriptionContainer{
+		height:20em;
+	}
 
 }
